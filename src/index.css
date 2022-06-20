@@ -1,0 +1,588 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:100vh;
+  position: relative;
+}
+
+.App{
+  display:flex;
+  justify-content: center;
+}
+
+.main .navbar{
+  width:100%;
+  background-color: black;
+  height:10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.main .navbar .menu{
+  display:flex;
+}
+
+.main .navbar .logo{
+  height:8rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 10rem;
+  height: 6rem;
+}
+
+.main .navbar .logo img{
+  border-radius: 0.5rem;
+}
+
+.main .navbar .menu ul{
+  display: flex;  
+  margin-right: 5rem;
+  list-style: none;
+}
+
+.main .navbar .menu .link{
+  display:flex;
+  padding:0rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color:white;
+}
+
+.main .navbar .menu .link:hover{
+  color:crimson;
+}
+
+.main .navbar .menu .active{
+  color:blueviolet;
+}
+
+.main .section1{
+  width:100%;
+  height:90vh;
+  position: absolute;
+  top:10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .section1 .btn1{
+  padding: 2rem 4rem;
+  background-color: blue;
+  border: none;
+  color:white;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+.main .section1 .btn1:hover{
+  background-color: rgb(114, 51, 215);
+  color:rgb(243, 236, 236);
+}
+
+
+.register{
+  width: 30rem;
+  position: absolute;
+  top:10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  background-color: black;
+  height: 45%;
+  border-radius: 0.7rem;
+  
+}
+
+.register .text{
+  color:red;
+  padding-bottom: 1rem;
+}
+
+.register .register_input{
+  padding:0.5rem;
+  margin: 0.5rem;
+  border:none;
+}
+
+.register .btn{
+  width:50%;
+  margin-top: 1rem;
+  padding:0.5rem;
+  border:none;
+  background-color: blueviolet;
+  color:white;
+}
+
+.register .btn:hover{
+  color:rgb(14, 13, 13);
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+
+
+.login{
+  width: 30rem;
+  position: absolute;
+  top:10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  background-color: black;
+  height:35%;
+  border-radius: 0.7rem;
+  
+}
+
+.login .text{
+  color:red;
+  padding-bottom: 1rem;
+}
+
+.login .register_input{
+  padding:0.5rem;
+  margin: 0.5rem;
+  border:none;
+}
+
+.login .btn{
+  width:50%;
+  margin-top: 1rem;
+  padding:0.5rem;
+  border:none;
+  background-color: blueviolet;
+  color:white;
+}
+
+.login .btn:hover{
+  color:rgb(14, 13, 13);
+  cursor: pointer;
+  background-color: darkcyan;
+
+}
+
+.section2{
+  display: none;
+}
+
+
+.appointment{
+  width:40%;
+  position: absolute;
+  top:10rem;
+  margin:10rem auto;
+  padding:3rem;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+
+.appointment .text1{
+  padding-bottom: 2rem;
+}
+
+.appointment .details{
+  display:flex;
+  justify-content: space-around;
+}
+
+.appointment .details .column1{
+  display:flex;
+  flex-direction: column;
+}
+
+.appointment .details .column1 input{
+  padding:1rem;
+  margin: 1rem 0rem;
+}
+
+.appointment .Submit{
+  width:100%;
+  padding:0.8rem;
+  margin-top: 2rem;
+  background-color: blueviolet;
+  border: none;
+  color:white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.appointment .Submit:hover{
+  background-color: black;
+  color:red;
+  font-size: 1.5rem;
+}
+
+.client_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10rem;
+  width:100%;
+}
+.clientInformation{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:40%;
+  margin: 5rem auto;
+  padding: 2rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem black;
+  border-radius: 0.5rem;
+}
+
+.clientInformation .sec1{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientInformation .text1{
+  padding-bottom: 2rem;
+  color: rgb(95, 7, 7);
+}
+
+.clientInformation .section1{
+  display:flex;
+  width:100%;
+  column-gap: 5rem;
+}
+.clientInformation .section1 .image{
+  display:flex;
+  justify-content: flex-end;
+  width:50%;
+  padding-right: 0rem;
+}
+
+.clientInformation .section1 .image img{
+  object-fit: cover;
+  height:15rem;
+  border-radius: 1rem;
+}
+
+
+.clientInformation .section1 .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:50%;
+  padding: 0rem 2rem 2rem 0rem;
+  color:rgb(221, 100, 100);
+}
+
+.clientInformation .section1 .details .info{
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
+}
+
+.client_main .appointment_status{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:40%;
+  margin: 3rem auto;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem black;
+  border-radius: 0.5rem;
+}
+
+.client_main .appointment_status .table{
+  margin-top: 0.5rem;
+}
+
+.client_main .appointment_status .table .row .name{
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+}
+
+.client_main .appointment_status .table .row_data .row_name{
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.client_main .appointment_status .table .row_data .row_name button{
+  border: none;
+  text-align: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.client_main .appointment_status .table .row_data .row_name button:hover{
+  color:red;
+}
+
+@media(max-width:1050px){
+
+  html{
+    font-size: 55%;
+  }
+}
+
+
+@media(max-width:1000px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .client_main .appointment_status{
+    width: 60%;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:870px){
+  html{
+    font-size: 40%;
+  }
+
+
+  .login .btn{
+    width:20%;
+  }
+
+  .register .btn{
+    width: 62%;
+  }
+  
+  
+  .appointment{
+    width:60%;
+  }
+
+  .appointment .details{
+    display:flex;
+    flex-direction: column;
+    height:90%;
+  }
+
+  .appointment .Submit{
+    width:100%;
+    padding:2rem;
+    margin-top:1.2rem;
+    background-color: blueviolet;
+    border: none;
+    color:white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .appointment .Submit:hover{
+    background-color: black;
+    color:rgb(224, 199, 199);
+    font-size: 2rem;
+  }
+
+  .login .btn{
+    width:68%;
+  }
+
+  .client_main .appointment_status{
+    width:40%;
+  }
+
+  .client_main .appointment_status{
+    width: 50%;
+  }
+
+  .clientInformation{
+    width: 50%;
+  }
+  
+}
+
+
+@media(max-width:680px){
+  html{
+    font-size: 35%;
+  }
+  .login .btn{
+    width:76%;
+  }
+
+  .client_main .appointment_status{
+    width:60%;
+  }
+
+  .clientInformation{
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+@media(max-width:560px){
+  html{
+    font-size: 30%;
+  }
+  
+  .main .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main .navbar .logo{
+    height:8rem;
+    margin-left: 0rem;
+  }
+
+  .main .navbar .menu ul{
+    display:none;
+  }
+
+  .main .section2{
+    display: flex;
+    width:100%;
+    position: absolute;
+    bottom:0;   
+  }
+
+  .main .section2 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width:100%;
+  }
+
+  .main .section2 li{
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0rem 0rem 0rem; 
+  }
+
+  .main .section2 .disp{
+    width: 70%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0rem 0rem 0rem; 
+  }
+
+  .main .section2 .link{
+    text-transform: uppercase;
+  }
+
+  .section2 button{
+    width:100%;
+    background-color: black;
+    color:white;
+    border:none;
+    padding:2rem 0rem;
+    text-transform: uppercase;
+  }
+
+  .section2 .btn1{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background-color: black;
+    color:white;
+    border:none;
+    padding:2rem 0rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+
+  .login .btn{
+    width:20rem;
+  }
+
+  .register .btn{
+    width: 68%;
+  }
+
+  .section2 button:hover{
+    color:rgb(6, 6, 7);
+    background-color: rgb(124, 102, 102);
+    cursor: pointer;
+  }
+
+  .login{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .appointment{
+    width:70%;
+  }
+
+
+  .appointment .details{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+  }
+
+  .appointment .details .column1 input{
+    padding:0.5rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .client_main .appointment_status{
+    width:90%;
+  }
+
+  .clientInformation{
+    width: 80%;
+  }
+
+}
+
+@media(max-width:350px){
+  html{
+    font-size: 40%;
+  }
+}
+
+
